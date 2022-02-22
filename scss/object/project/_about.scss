@@ -1,0 +1,28 @@
+@charset "utf-8";
+.p-about {
+    &__content {
+        margin: 0 0 15px 16px;
+    }
+    &__discription {
+        font-size: 14px;
+    margin-right: 23px;
+    }
+    
+
+    // pcレスポンシブ時、画像とテキスト部分(discription)を横並びにする
+
+
+    @include media(pc) {
+        height: 477px;
+        display: flex;
+        &__img {
+            width: 50%;
+        }
+        &__content {
+            width: 45%;
+            top: 180px;
+            left: 70px;
+            padding: 200px 6% 0 6%;
+        }
+    }
+}

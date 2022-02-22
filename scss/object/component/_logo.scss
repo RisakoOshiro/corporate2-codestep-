@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+// ロゴ　ヘッダーとフッターに共通
+
+.c-logo {
+        display: block;
+    &__img {
+        width: 80px;
+        margin-bottom: 7.5px;
+    }
+}

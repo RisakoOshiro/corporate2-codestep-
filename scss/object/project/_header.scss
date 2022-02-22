@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+// pcレスポンシブ時、ロゴとメニューが横並びになる
+
+.p-header {
+    padding: 16px 16px 15px 16px;
+    &__gmenu {
+        display: flex;
+        align-items: center;
+    }
+    &__contact {
+        display: none;
+        width: 200px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        @include media(pc) {
+            display: block;           
+            }
+        }
+    &__attention {
+        display: none;
+        @include media(pc) {
+            display: block;
+        }
+    }
+    @include media(pc) {
+        padding-right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__inner {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

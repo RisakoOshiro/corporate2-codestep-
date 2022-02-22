@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+// item(テキストと画像のセット)はcomponentの方が良かったかな？→componentにした(クラス名cardを付与)
+// 4つのitemを2つずつ左右で分ける。pcレスポンシブ時に段差をつける
+
+.p-business {
+    @include media(pc) {
+        height: 974px;
+        width: 100%;
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &--left {
+                width: 50%;
+                margin-top: 100px;
+                margin-right: 5%;
+            }
+            &--right {
+                width: 50%;
+            }
+        }
+    }
+}

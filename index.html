@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href=""> <!--- ファビコン --->
+        <title></title> 
+        <meta name="description" content="テキスト"> <!--- タイトルバー　検索結果やお気に入りに入れた時のタイトルとして表示される-->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> <!-- Googleフォント -->
+        <link rel="stylesheet" href="css/foundation/_reset.scss">　<!--- リセットCSS　--->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- jQuery読み込み(ネット経由) -->
+    </head>
+
+    <body>
+        <!-- ヘッダー -->
+        <header class="l-header p-header">
+            <div class="p-header__inner">
+                <p class="p-header__logo">
+                    <a class="c-logo__" href="index.html">
+                        <img class="c-logo__img" src="img/logo.svg" alt="ロゴ画像">
+                    </a>
+                </p>
+                <nav class="p-header__gmenu">
+                    <ul class="p-gmenu">
+                        <li class="p-gmenu__item"><a href="#">NEWS</a></li>
+                        <li class="p-gmenu__item"><a href="#">ABOUT</a></li>
+                        <li class="p-gmenu__item"><a href="#">BUSINESS</a></li>
+                        <li class="p-gmenu__item"><a href="#">COMPANY</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="p-header__contact">
+                <a class="c-white__text p-header__attention" href="#">資料請求</a>
+            </p>
+        </header>
+
+        <!-- メイン -->
+        <main class="l-main">
+            <div class="c-mainvisual">
+                <img src="img/mainvisual.jpg" alt="メインビジュアル">
+            </div>
+
+            <!-- ニュースセクション -->
+            <section class="c-wrapper p-mews">
+                <h1 class="c-title">
+                    <span class="c-title__en">NEWS</span>
+                    <span class="c-title__ja">ニュース</span>
+                </h1>
+                <ul class="p-news__content">
+                    <li class="p-news__item">
+                        <div class="c-date">
+                            <time class="c-date__time" datetime="2021.01.01">2021.01.01</time>
+                            <span class="c-white__text p-news__attention">NEWS</span>
+                        </div>
+                        <div class="p-news__text">タイトルタイトルタイトルタイトル</div>
+                    </li>
+                    <li class="p-news__item">
+                        <div class="c-date">
+                            <time class="c-date__time" datetime="2021.01.01">2021.01.01</time>
+                            <span class="c-white__text p-news__attention">PRESS</span>
+                        </div>
+                        <div class="p-news__text">タイトルタイトルタイトルタイトル</div>
+                    </li>
+                    <li class="p-news__item">
+                        <div class="c-date">
+                            <time class="c-date__time"　datetime="2021.01.01">2021.01.01</time>
+                            <span class="c-white__text p-news__attention">MEWS</span>
+                        </div>
+                        <div class="p-news__text">タイトルタイトルタイトルタイトル</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- アバウトセクション -->
+            <section class="p-about">
+                <div class="p-about__img">
+                    <img class="c-feature" src="img/about.jpg" alt="オフィスの画像">
+                </div>
+                <div class="p-about__content">
+                    <h1 class="c-title">
+                        <span class="c-title__en">ABOUT</span>
+                        <span class="c-title__ja">私たちについて</span>
+                    </h1>
+                    <p class="p-about__discription">テキストテキストテキストテキストテキストテキスト テキストテキストテキ
+                        ストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキスト テキストテキストテキ
+                        ストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキスト テキストテキストテキ
+                        ストテキストテキストテキスト</p>
+                </div>
+            </section>
+
+            <!-- ビジネスセクション -->
+            <section class="c-wrapper p-business">
+                <h1 class="c-title">
+                    <span class="c-title__en">BUSINESS</span>
+                    <span class="c-title__ja">事業内容</span>
+                </h1>
+                <div class="p-business__content">
+                    <div class="p-business__content--left">
+                        <div class="c-card">
+                            <p class="c-card__text">ウェブ制作・マーケティング</p>
+                            <img class="c-card__img"  src="img/business1.jpg"></img>
+                        </div>
+                        <div class="c-card">
+                            <p class="c-card__text">インターネットメディア事業</p>
+                            <img class="c-card__img" src="img/business2.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="p-business__content--right">
+                        <div class="c-card">
+                            <p class="c-card__text">プロモーション企画・制作</p>
+                            <img class="c-card__img" src="img/business3.jpg"></img>
+                        </div>
+                        <div class="c-card">
+                            <p class="c-card__text">ソーシャル企画・運営</p>
+                            <img class="c-card__img" src="img/business4.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 会社概要セクション -->
+            <section class=" c-wrapper p-company">
+                <div class="p-company__content">
+                    <h1 class="c-title">
+                        <span class="c-title__en">COMPANY</span>
+                        <span class="c-title__ja">会社情報</span>
+                    </h1>
+                    <dl class="p-info">
+                        <dt class="p-info__heading">会社名</dt>
+                        <dd class="p-info__text">ウエブエンターテイメントデザイン株式会社</dd>
+                        <dt class="p-info__heading">所在地</dt>
+                        <dd class="p-info__text">東京都渋谷区桜丘町99-9 West Building 3F</dd>
+                        <dt class="p-info__heading">代表</dt>
+                        <dd class="p-info__text">XXXXXX</dd>
+                        <dt class="p-info__heading">設立</dt>
+                        <dd class="p-info__text">2021年1月1日</dd>
+                        <dt class="p-info__heading">資本金</dt>
+                        <dd class="p-info__text">3,000,000円</dd>
+                        <dt class="p-info__heading">事業内容</dt>
+                        <dd class="p-info__text">Web制作・マーケティング<br>インターネットメディア事業<br>プロモーション企画・制作<br>ソーシャル企画・制作</dd>                      
+                    </dl>
+                </div>
+                <div class="p-company__img">
+                    <img class="c-feature p-company__feature" src="img/company.jpg" alt="写真">
+                </div>
+            </section>
+        </main>
+
+
+        <!-- フッター -->
+        <footer class="l-footer">
+            <div class="p-footer">
+                <div class="p-footer__content">
+                    <p class="p-footer__logo">
+                        <a class="c-logo" href="index.html"><img class="c-logo__img" src="img/logo.svg" alt="ロゴ画像"></a>
+                    </p>
+                    <div class="p-footer__text">Web Entertainment Design Inc.
+                                                <br>West Building 3F
+                                                <br>9-99 Sakuragaokacho Shibuya-ku
+                                                <br>Tokyo, Japan 150-0031
+                                                <br>T/99-9999-9999
+                    </div>
+                </div>
+                <p class="p-footer__copyWrite">&copy Web Entertainment Design Inc.</p>
+            </div>
+            
+        </footer>
+        <script src="script.js"></script> <!-- jQuery記述ファイル読み込み　<!/body>の直前に記述 -->
+    </body>

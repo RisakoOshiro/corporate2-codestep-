@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+// ヘッダーのメニュー
+
+.p-gmenu {
+        display: flex;
+        align-items: center;
+    li a {
+        padding-right: 30px;
+        font-size: 14px;
+    }
+    @include media(pc) {
+        margin-left: 30px;
+    }
+    
+}

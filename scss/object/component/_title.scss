@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+// メインエリアの各セクションで使い回す
+// pcレスポンシブ時、疑似要素を用いて横線を入れる
+
+.c-title {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    &__en {
+        font-size: 36px;
+        margin-bottom: 10px;
+        letter-spacing: 8px;
+    }
+    &__ja {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    &::after {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: #000;
+        display: block;
+        margin-bottom: 34px;
+    }
+    @include media(pc) {
+        &__ja {
+            margin-bottom: 36px;
+        }
+        &::after {
+            margin-bottom: 50px;
+        }
+    }
+}

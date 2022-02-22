@@ -1,0 +1,38 @@
+@charset "utf-8";
+.p-company {
+    height: 990px;
+    // position: relative;
+    &__content {
+        padding: 40px 20px;
+        background-color: #fff;
+    }
+    &__img  {
+        max-width: 800px;
+    }
+    &__feature {
+        height: 400px;
+        position: relative;
+        bottom: -50px;
+        left: 0;
+    }
+        
+    @include media(pc) {
+        position: relative;
+        height: 760px;
+        &__content {
+            padding: 100px 6%;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 640px;
+        }
+        &__img {
+            position: absolute;
+            top: 115px;
+            right: 0;
+            width: 55%;
+        }
+        
+    }
+}

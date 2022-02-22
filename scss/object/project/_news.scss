@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+// pcレスポンシブ時は横並び
+
+.p-news {
+    &__content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    @include media(pc) {
+        flex-direction: row;
+        justify-content: space-between;
+        }
+    }
+    &__item {
+        margin-bottom: 40px;
+        @include media(pc) {
+            border-left: thin solid black;
+            padding-left: 20px;
+            &:first-of-type {
+                border-left: none;
+                padding-left: 0px;
+            }
+        }
+    }
+    &__text {
+        font-size: 16px;
+    }
+    &__attention {
+        display: inline-block;
+        font-size: 12px;
+        padding: 1px 7px;
+        margin-left: 10px;
+    }
+    
+    
+        
+        
+        
+    
+}

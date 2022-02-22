@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+// 文字が白色、背景が黒色。
+// ヘッダーの「資料請求」とニュースセクションのNEWアイコン
+
+.c-white__text {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background-color: #000;
+    display: block;
+}
